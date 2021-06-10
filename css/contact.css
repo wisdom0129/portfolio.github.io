@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+html{
+    font-size: 15px;
+}
+body{
+    height: 100%;
+    width: 100%;
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+#wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#background{
+    position: fixed;
+    z-index: -999;
+    opacity: 30%;
+    width: 100%;
+    height: 100vh;
+}
+nav a{
+    text-decoration: none;
+    color:black;
+}
+
+#logo{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 900;
+    font-size: 1.6vw;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+nav{
+    position: fixed;
+    top:2.3vw;
+    left: 4vw;
+        z-index: 990;
+}
+.nav_sub{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
+    padding-top: 0.4vw;
+
+}
+.nav_sub a{
+    color:rgb(169, 169, 169);
+}
+#nav_about{
+    padding-top: 20px;
+}
+#nav_contact a{
+    color:rgb(52, 123, 255);
+}
+nav ul li{
+    list-style: none;
+}
+h1{
+    font-size: 20vw;
+    position: absolute;
+    top:-16vw;
+    left: 6vw;
+    z-index: -900;
+    color:rgb(244, 244, 244)
+}
+.typing li{
+    font-size: 8vw;
+    line-height: 1.3;
+    font-weight: 800;
+}
+.typing{
+    margin-top: 15%;
+    margin-left: 14.8vw;
+}
+
+
+.typing-txt{display: none;}
+ul{list-style:none;}
+.typing ul li.on {  
+  display: inline-block; 
+  animation-name: cursor; 
+  animation-duration: 0.4s; 
+  animation-iteration-count:infinite;
+} 
+@keyframes cursor{ 
+  0%{border-right: 1px solid #fff} 
+  50%{border-right: 1px solid #000} 
+  100%{border-right: 1px solid #fff} 
+}
+#texts{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+#text1{
+    position: absolute;
+    top:26vw;
+    left: 58vw;
+    margin-right: 40px;
+    line-height: 1.8;
+}
+#text2{
+    position: absolute;
+    top:26vw;
+    left: 79vw;
+    line-height: 1.8;
+}
+#text2 a:hover{
+    text-decoration: underline black 4px;
+    font-weight: 700;
+}
+#text2 a{
+    color:black;
+    text-decoration: none;
+}
