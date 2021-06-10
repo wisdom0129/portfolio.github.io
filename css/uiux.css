@@ -188,3 +188,5 @@ nav ul li{
         font-size: 2.0vw;
     }
 }
+body{ -ms-overflow-style: none; }
+::-webkit-scrollbar { display: none; }
